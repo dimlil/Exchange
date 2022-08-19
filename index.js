@@ -1,4 +1,10 @@
-const exchange = document.getElementById('exchange').value;
+let exchange = document.getElementById('exchange').value;
+
+document.getElementById('exchange').addEventListener('change', () => {
+    exchange = document.getElementById('exchange').value;
+    console.log(exchange);
+})
+
 console.log(exchange);
 
 async function getExchange() {
